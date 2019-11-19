@@ -16,8 +16,8 @@ public class Mailing {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        String OFFICIAL_EMAIL_ID = "sumit@contaque.com";
-        String EMAIL_PASSWORD = "2019@avissol";
+        String OFFICIAL_EMAIL_ID = "";
+        String EMAIL_PASSWORD = "";
         String EMAIL_HOST = "smtp.gmail.com";
         String EMAIL_PORT = "587";
         String SSL = "false";
