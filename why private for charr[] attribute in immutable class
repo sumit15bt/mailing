@@ -1,0 +1,24 @@
+package practice2;
+
+import org.json.JSONException;
+
+final class Immutable {
+
+    public final char[] state = "Hi Immutable".toCharArray();
+
+    public char[] getState() {
+        return state.clone();
+    }
+}
+
+class NEWClass {
+
+    public static void main(String[] arg) {
+        Immutable mu = new Immutable();
+        System.out.println("mu = " + new String(mu.getState()));
+        
+        mu.state[1] = 'o';
+        
+        System.out.println("mu = " + new String(mu.getState()));
+    }
+}
